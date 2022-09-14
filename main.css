@@ -116,6 +116,7 @@ sub {
 }
 
 input {
+    border-radius: 0;
     background: transparent;
     border: none;
     min-width: 15em;
@@ -182,7 +183,8 @@ footer {
     justify-content: center;
     opacity: .8;
     padding: 1.5em;
-    gap: 1.5em;
+    gap: 0.5em 1.5em;
+    margin-top: 2em;
 }
 
 footer hr {
