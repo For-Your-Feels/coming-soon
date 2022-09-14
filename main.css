@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Migra';
+    src: url("migra_italic_extralight.otf");
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url("Aileron-Light.otf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: hsla(359, 100%, 88%, 1);
+    color: white;
+    background-image:
+        radial-gradient(at 37% 81%, hsla(14, 71%, 71%, 1) 0px, transparent 50%),
+        radial-gradient(at 73% 90%, hsla(191, 73%, 38%, 0.69) 0px, transparent 50%),
+        radial-gradient(at 99% 30%, hsla(335, 59%, 78%, 0.67) 0px, transparent 50%),
+        radial-gradient(at 51% 68%, hsla(348, 62%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 21% 98%, hsla(21, 100%, 86%, 0.95) 0px, transparent 50%),
+        radial-gradient(at 30% 39%, hsla(43, 83%, 62%, 0.71) 0px, transparent 50%),
+        radial-gradient(at 50% 14%, hsla(323, 43%, 67%, 1) 0px, transparent 50%),
+        url('noise.svg');
+
+    font-family: 'Aileron', Corbel,
+        "Lucida Grande",
+        "Lucida Sans Unicode",
+        "Lucida Sans",
+        "DejaVu Sans",
+        "Bitstream Vera Sans",
+        "Liberation Sans",
+        Verdana,
+        "Verdana Ref",
+        sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(6rem, 15vmin, 10rem);
+    text-align: center;
+    line-height: 1;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'Migra', Constantia,
+        "Lucida Bright",
+        Lucidabright,
+        "Lucida Serif",
+        Lucida,
+        "DejaVu Serif",
+        "Bitstream Vera Serif",
+        "Liberation Serif",
+        Georgia,
+        serif;
+}
+
+.text-medium {
+    font-size: 1.2rem;
+}
+
+sub {
+    font-size: clamp(1rem, 3vmin, 1.5rem);
+    margin: 1rem;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-enclosed {
+    margin-top: 2em;
+    border-radius: 9999px;
+    padding: 0 6em;
+    border: 1px solid white;
+}
+
+.content-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mc_embed_signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mc_embed_signup_scroll {
+    display: flex;
+    align-items: center;
+}
+
+.mc-field-group {
+    /* background-color: white; */
+    background: transparent;
+    position: relative;
+}
+
+input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    min-width: 15em;
+    border-bottom: 1px solid #f6c29f;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: .5em .2em;
+    font-weight: 300;
+    transition: all .2s linear;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+input:invalid {
+    border-bottom-color: #B80C09;
+}
+
+input:placeholder-shown {
+    border-bottom-color: #f6c29f;
+}
+
+input:active, input:focus {
+    border-bottom-color: #FFF;
+}
+
+
+.button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
+    padding: .5em 1em;
+    font-weight: 300;
+    margin: 0.2em 1.2em;
+    cursor: pointer;
+    border-radius: 9999px;
+    transition: all .15s ease-in-out;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active, .button:focus {
+    transform: scale(0.95);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: .8;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid white;
+    width: 100%;
+}
+
+.callout {
+    max-width: 12em;
+    text-align: right;
+    margin: 1.5em;
+}
+
+.socials {
+    margin: 1.5em;
+    display: flex;
+}
+
+.socials img {
+    width: 2em;
+    height: 2em;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
